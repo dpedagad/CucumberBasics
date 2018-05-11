@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="39.372321">
+<testcase classname="Login Amazon website" name="_2" time="15.214143">
+<failure message="org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'DIN16002375', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_77'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)&#13;&#10;&#9;at stepDefinitions.StepDefinition.user_selects_your_wishlist(StepDefinition.java:53)&#13;&#10;&#9;at ✽.Then User selects your wishlist(AmazonLogin.feature:20)&#13;&#10;"><![CDATA[Given Amazon Website is opened..............................................passed
+When Click on signin button.................................................passed
+Then Enter valid "deepak.pedhagada@gmail.com"...............................passed
+And Enter correct "deepak9985"..............................................passed
+Then Click on Login button..................................................passed
+Then User is on home page...................................................passed
+Then User selects your wishlist.............................................failed
+Then Close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DIN16002375', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_77'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
+	at stepDefinitions.StepDefinition.user_selects_your_wishlist(StepDefinition.java:53)
+	at ✽.Then User selects your wishlist(AmazonLogin.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="Login Amazon website" name="_3" time="24.158178">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.i]n&gt; but was:&lt;[Amazon Sign I]n&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at stepDefinitions.StepDefinition.user_is_on_home_page(StepDefinition.java:48)&#13;&#10;&#9;at ✽.Then User is on home page(AmazonLogin.feature:19)&#13;&#10;"><![CDATA[Given Amazon Website is opened..............................................passed
+When Click on signin button.................................................passed
+Then Enter valid "dpk@amazon.com"...........................................passed
+And Enter correct "dpk9985".................................................passed
+Then Click on Login button..................................................passed
+Then User is on home page...................................................failed
+Then User selects your wishlist.............................................skipped
+Then Close the browser......................................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.i]n> but was:<[Amazon Sign I]n>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinitions.StepDefinition.user_is_on_home_page(StepDefinition.java:48)
+	at ✽.Then User is on home page(AmazonLogin.feature:19)
+]]></failure>
+</testcase>
+</testsuite>

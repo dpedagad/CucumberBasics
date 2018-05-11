@@ -1,0 +1,259 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 26,
+        "name": "",
+        "description": "",
+        "id": "login-amazon-website;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8922375472,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Amazon Website is opened",
+            "match": {
+              "location": "StepDefinition.flipkart_Website_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1398270351,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on signin button",
+            "match": {
+              "location": "StepDefinition.Click_on_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 308179453,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter valid \"deepak.pedhagada@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "deepak.pedhagada@gmail.com",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.enter_valid_Username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 143660155,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter correct \"deepak9985\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "deepak9985",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefinition.enter_correct_Password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4092237657,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on Login button",
+            "match": {
+              "location": "StepDefinition.click_on_Login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17421105,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is on home page",
+            "match": {
+              "location": "StepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 331999047,
+              "error_message": "org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027DIN16002375\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_77\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)\r\n\tat stepDefinitions.StepDefinition.user_selects_your_wishlist(StepDefinition.java:53)\r\n\tat ✽.Then User selects your wishlist(AmazonLogin.feature:20)\r\n",
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "User selects your wishlist",
+            "match": {
+              "location": "StepDefinition.user_selects_your_wishlist()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Close the browser",
+            "match": {
+              "location": "StepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "",
+        "description": "",
+        "id": "login-amazon-website;;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15098013782,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Amazon Website is opened",
+            "match": {
+              "location": "StepDefinition.flipkart_Website_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2610855111,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on signin button",
+            "match": {
+              "location": "StepDefinition.Click_on_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 203517209,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter valid \"dpk@amazon.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dpk@amazon.com",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.enter_valid_Username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 144827915,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter correct \"dpk9985\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dpk9985",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefinition.enter_correct_Password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6086922625,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on Login button",
+            "match": {
+              "location": "StepDefinition.click_on_Login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14041711,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.i]n\u003e but was:\u003c[Amazon Sign I]n\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinitions.StepDefinition.user_is_on_home_page(StepDefinition.java:48)\r\n\tat ✽.Then User is on home page(AmazonLogin.feature:19)\r\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "User is on home page",
+            "match": {
+              "location": "StepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User selects your wishlist",
+            "match": {
+              "location": "StepDefinition.user_selects_your_wishlist()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Close the browser",
+            "match": {
+              "location": "StepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Amazon website",
+    "description": "",
+    "id": "login-amazon-website",
+    "keyword": "Feature",
+    "uri": "AmazonLogin.feature"
+  }
+]
