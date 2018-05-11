@@ -1,7 +1,9 @@
 package stepDefinitions;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -18,6 +20,7 @@ public class StepDefinition {
 	   System.setProperty("webdriver.chrome.driver", "D:/Automation/chromedriver_win32/chromedriver.exe");
 	   driver = new ChromeDriver();
 	   driver.get("https://www.amazon.in/");
+	   driver.manage().window().maximize();
 	}
 	
 	@When("^Click on signin button$")
@@ -49,16 +52,28 @@ public class StepDefinition {
 	}
 	
 	@Then("^User selects your wishlist$")
-	public void user_selects_your_wishlist() {
-	    driver.switchTo().frame("mainpanel");
+	public void user_selects_your_wishlist() throws InterruptedException {
+	  WebElement element = driver.findElement(By.xpath("//*[@id='nav-link-yourAccount']/span[2]"));
+	  WebElement Wishlist = driver.findElement(By.xpath("//*[@id='nav-flyout-yourAccount']/div[2]/a[3]/span"));
 	    Actions hover = new Actions(driver);
-	    hover.moveToElement(driver.findElement(By.xpath("//*[@id='nav-link-yourAccount']/span[2]"))).build().perform();
-	    driver.findElement(By.xpath("//*[@id='nav-flyout-yourAccount']/div[2]/a[3]/span)")).click();
+	    
+	    hover.moveToElement(element).build().perform();
+	    Thread.sleep(3000);
+	    Wishlist.click();
+	   // driver.findElement(By.xpath("//*[@id='nav-flyout-yourAccount']/div[2]/a[3]/span)")).click();
 	}
 	
-	@Then("^Close the browser$")
-	public void close_the_browser() {
-	driver.quit();   
-	
+	@Then("^Scroll to an element$")
+	public void Scroll_to_an_element() throws InterruptedException {
+	  WebElement item = driver.findElement(By.xpath("//*[@id='itemName_I4LK1GT914KH5']"));
+	  ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntloView(false);", item);
+	  Thread.sleep(5000);
+	item.click();
 	}
+	
+//	@Then("^Close the browser$")
+//	public void close_the_browser() {
+//	driver.quit();   
+//	
+//	}
 }

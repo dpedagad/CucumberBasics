@@ -85,11 +85,17 @@ formatter.step({
 });
 formatter.step({
   "line": 21,
-  "name": "Close the browser",
+  "name": "Scroll to an element",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 23,
+  "comments": [
+    {
+      "line": 22,
+      "value": "#Then Close the browser"
+    }
+  ],
+  "line": 24,
   "name": "",
   "description": "",
   "id": "login-amazon-website;;",
@@ -99,7 +105,7 @@ formatter.examples({
         "Username",
         "Password"
       ],
-      "line": 25,
+      "line": 26,
       "id": "login-amazon-website;;;1"
     },
     {
@@ -107,22 +113,14 @@ formatter.examples({
         "deepak.pedhagada@gmail.com",
         "deepak9985"
       ],
-      "line": 26,
-      "id": "login-amazon-website;;;2"
-    },
-    {
-      "cells": [
-        "dpk@amazon.com",
-        "dpk9985"
-      ],
       "line": 27,
-      "id": "login-amazon-website;;;3"
+      "id": "login-amazon-website;;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 26,
+  "line": 27,
   "name": "",
   "description": "",
   "id": "login-amazon-website;;;2",
@@ -172,21 +170,21 @@ formatter.step({
 });
 formatter.step({
   "line": 21,
-  "name": "Close the browser",
+  "name": "Scroll to an element",
   "keyword": "Then "
 });
 formatter.match({
   "location": "StepDefinition.flipkart_Website_is_opened()"
 });
 formatter.result({
-  "duration": 8922375472,
+  "duration": 18355824506,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.Click_on_signin_button()"
 });
 formatter.result({
-  "duration": 1398270351,
+  "duration": 3851443024,
   "status": "passed"
 });
 formatter.match({
@@ -199,7 +197,7 @@ formatter.match({
   "location": "StepDefinition.enter_valid_Username(String)"
 });
 formatter.result({
-  "duration": 308179453,
+  "duration": 467102225,
   "status": "passed"
 });
 formatter.match({
@@ -212,156 +210,36 @@ formatter.match({
   "location": "StepDefinition.enter_correct_Password(String)"
 });
 formatter.result({
-  "duration": 143660155,
+  "duration": 210644357,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.click_on_Login_button()"
 });
 formatter.result({
-  "duration": 4092237657,
+  "duration": 7302505223,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 17421105,
+  "duration": 53468460,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_selects_your_wishlist()"
 });
 formatter.result({
-  "duration": 331999047,
-  "error_message": "org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027DIN16002375\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_77\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)\r\n\tat stepDefinitions.StepDefinition.user_selects_your_wishlist(StepDefinition.java:53)\r\n\tat ✽.Then User selects your wishlist(AmazonLogin.feature:20)\r\n",
+  "duration": 6311816516,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefinition.Scroll_to_an_element()"
+});
+formatter.result({
+  "duration": 72934061,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: arguments[0].scrollIntloView is not a function\n  (Session info: chrome\u003d66.0.3359.139)\n  (Driver info: chromedriver\u003d2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027DIN16002375\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_77\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir\u003dC:\\Users\\dpedagad\\AppData\\Local\\Temp\\scoped_dir16244_567}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d66.0.3359.139, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: a23f0af205a37244032f89ac17f0b2c8\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:582)\r\n\tat stepDefinitions.StepDefinition.Scroll_to_an_element(StepDefinition.java:69)\r\n\tat ✽.Then Scroll to an element(AmazonLogin.feature:21)\r\n",
   "status": "failed"
-});
-formatter.match({
-  "location": "StepDefinition.close_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 27,
-  "name": "",
-  "description": "",
-  "id": "login-amazon-website;;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 14,
-  "name": "Amazon Website is opened",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 15,
-  "name": "Click on signin button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "Enter valid \"dpk@amazon.com\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "Enter correct \"dpk9985\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "Click on Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "User is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "User selects your wishlist",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 21,
-  "name": "Close the browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinition.flipkart_Website_is_opened()"
-});
-formatter.result({
-  "duration": 15098013782,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.Click_on_signin_button()"
-});
-formatter.result({
-  "duration": 2610855111,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "dpk@amazon.com",
-      "offset": 13
-    }
-  ],
-  "location": "StepDefinition.enter_valid_Username(String)"
-});
-formatter.result({
-  "duration": 203517209,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "dpk9985",
-      "offset": 15
-    }
-  ],
-  "location": "StepDefinition.enter_correct_Password(String)"
-});
-formatter.result({
-  "duration": 144827915,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.click_on_Login_button()"
-});
-formatter.result({
-  "duration": 6086922625,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 14041711,
-  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.i]n\u003e but was:\u003c[Amazon Sign I]n\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinitions.StepDefinition.user_is_on_home_page(StepDefinition.java:48)\r\n\tat ✽.Then User is on home page(AmazonLogin.feature:19)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "StepDefinition.user_selects_your_wishlist()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "StepDefinition.close_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
 });
 });

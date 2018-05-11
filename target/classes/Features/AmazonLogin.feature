@@ -18,10 +18,11 @@ And Enter correct "<Password>"
 Then Click on Login button
 Then User is on home page
 Then User selects your wishlist
-Then Close the browser
+Then Scroll to an element
+#Then Close the browser
 
 Examples: 
 
 |Username | Password |
 |deepak.pedhagada@gmail.com	| deepak9985 |
-|dpk@amazon.com  | dpk9985 |
+#|dpk@amazon.com  | dpk9985 |
